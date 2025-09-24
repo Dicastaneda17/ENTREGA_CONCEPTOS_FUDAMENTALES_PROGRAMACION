@@ -79,7 +79,6 @@ public class GenerarArchivos {
             // Línea 1: identificación del vendedor (sin encabezados, como la guía)
             bw.write(tipoDocumento + ";" + numeroDocumento);
             bw.newLine();
-            
 
             // Siguientes líneas: IDProducto;Cantidad
             for (int i = 0; i < cantidadProductos; i++) {
