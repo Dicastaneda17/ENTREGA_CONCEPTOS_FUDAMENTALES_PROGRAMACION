@@ -13,7 +13,7 @@ public class GenerarArchivos {
 
     // Listas base
     private static final String[] NOMBRES   = {"Carlos", "Maria", "Andres", "Sofia", "Laura", "Jorge"};
-    private static final String[] APELLIDOS = {"Perez", "Gomez", "Rodriguez", "Martínez", "Hernandez", "Lopez"};
+    private static final String[] APELLIDOS = {"Perez", "Gomez", "Rodriguez", "Martinez", "Hernandez", "Lopez"};
 
     private static final Random R = new Random();
 
