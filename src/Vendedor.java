@@ -1,8 +1,14 @@
+import java.io.Serializable;
 
-public class Vendedor {
-    private long doc;
-    private String nombreCompleto;
-    private long totalVendido;
+/**
+ * Representa un vendedor (identificado por su documento).
+ */
+public class Vendedor implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    private final long doc;
+    private final String nombreCompleto;
+    private long totalVendido;  // acumulado durante el procesamiento
 
     public Vendedor(long doc, String nombreCompleto) {
         this.doc = doc;
@@ -10,7 +16,6 @@ public class Vendedor {
         this.totalVendido = 0L;
     }
 
-    // Getters y Setters
     public long getDoc() { return doc; }
     public String getNombreCompleto() { return nombreCompleto; }
     public long getTotalVendido() { return totalVendido; }

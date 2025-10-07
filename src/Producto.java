@@ -1,9 +1,15 @@
+import java.io.Serializable;
 
-public class Producto {
-    private int id;
-    private String nombre;
-    private int precio;
-    private int cantidadVendida;
+/**
+ * Representa un producto del catálogo.
+ */
+public class Producto implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    private final int id;
+    private final String nombre;
+    private final int precio;       // precio por unidad (entero)
+    private int cantidadVendida;    // acumulado durante el procesamiento
 
     public Producto(int id, String nombre, int precio) {
         this.id = id;
@@ -12,7 +18,6 @@ public class Producto {
         this.cantidadVendida = 0;
     }
 
-    // Getters y Setters
     public int getId() { return id; }
     public String getNombre() { return nombre; }
     public int getPrecio() { return precio; }
